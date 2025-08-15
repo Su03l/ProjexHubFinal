@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - ProjexHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-visual">
+            <div class="visual-content">
+                <div class="logo-section">
+                    <div class="auth-logo">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>ProjexHub</span>
+                    </div>
+                    <h1>مرحباً بعودتك</h1>
+                    <p>سجل دخولك للوصول إلى مشاريعك ومتابعة أحدث المشاريع الجامعية</p>
+                </div>
+                
+                <!-- إعادة تصميم المربعات الإحصائية لتكون أكثر تنظيماً -->
+                <div class="visual-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">1,247</div>
+                            <div class="stat-label">مشروع منشور</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">3,891</div>
+                            <div class="stat-label">طالب مسجل</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">156</div>
+                            <div class="stat-label">جامعة مشاركة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تحسين البطاقات العائمة -->
+                <div class="visual-decoration">
+                    <div class="floating-card">
+                        <i class="fas fa-code"></i>
+                        <span>تطوير البرمجيات</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-brain"></i>
+                        <span>الذكاء الاصطناعي</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>تطبيقات الموبايل</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>تسجيل الدخول</h2>
+                    <p>أدخل بياناتك للوصول إلى حسابك</p>
+                </div>
+
+                <form class="auth-form" id="login-form">
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" required placeholder="example@university.edu.sa">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
+                            <button type="button" class="password-toggle" id="password-toggle">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember-me">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="#" class="forgot-password" id="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+
+                    <!-- حذف اللون الأزرق من الزر -->
+                    <button type="submit" class="auth-btn primary" id="login-btn">
+                        <span>تسجيل الدخول</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <div class="divider">
+                        <span>أو</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>تسجيل الدخول بـ Google</span>
+                        </button>
+                        <button type="button" class="social-btn microsoft">
+                            <i class="fab fa-microsoft"></i>
+                            <span>تسجيل الدخول بـ Microsoft</span>
+                        </button>
+                    </div>
+
+                    <div class="form-footer">
+                        <p>ليس لديك حساب؟ <a href="signup.html" class="signup-link">إنشاء حساب جديد</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="back-to-home">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-right"></i>
+                    العودة للرئيسية
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgot-password-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>استعادة كلمة المرور</h3>
+                <button class="modal-close" id="close-forgot-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>أدخل بريدك الإلكتروني وسنرسل لك رابط لإعادة تعيين كلمة المرور</p>
+                <form id="forgot-password-form">
+                    <div class="form-group">
+                        <label for="reset-email">البريد الإلكتروني</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="reset-email" required placeholder="example@university.edu.sa">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="auth-btn secondary" id="cancel-reset">إلغاء</button>
+                        <button type="submit" class="auth-btn primary">إرسال الرابط</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

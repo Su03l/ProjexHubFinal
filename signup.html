@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - ProjexHub</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-visual">
+            <div class="visual-content">
+                <div class="logo-section">
+                    <div class="auth-logo">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>ProjexHub</span>
+                    </div>
+                    <h1>انضم إلى مجتمعنا</h1>
+                    <p>أنشئ حسابك وابدأ في مشاركة مشاريعك مع آلاف الطلاب والمطورين</p>
+                </div>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-upload"></i>
+                        <span>رفع ومشاركة مشاريعك</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>المشاركة في المسابقات</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-users"></i>
+                        <span>التواصل مع المطورين</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-star"></i>
+                        <span>تقييم المشاريع</span>
+                    </div>
+                </div>
+
+                <div class="visual-decoration">
+                    <div class="floating-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>مشاريع تخرج</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>أفكار إبداعية</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-rocket"></i>
+                        <span>ابدأ مشروعك</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-form-section">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>إنشاء حساب جديد</h2>
+                    <p>املأ البيانات التالية لإنشاء حسابك</p>
+                </div>
+
+                <form class="auth-form" id="signup-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">الاسم الأول</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="first-name" name="first-name" required placeholder="أحمد">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">الاسم الأخير</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="last-name" name="last-name" required placeholder="محمد">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-email">البريد الإلكتروني</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="signup-email" name="email" required placeholder="user@example.com">
+                        </div>
+                    </div>
+
+                    <!-- الجامعة مع خاصية البحث -->
+                    <div class="form-group">
+                        <label for="university">الجامعة</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-university"></i>
+                            <select id="university" name="university" required class="searchable-select">
+                                <option value="">اختر جامعتك</option>
+                                <option value="ksu">جامعة الملك سعود</option>
+                                <option value="kfupm">جامعة الملك فهد للبترول والمعادن</option>
+                                <option value="ku">جامعة القصيم</option>
+                                <option value="su">جامعة الشارقة</option>
+                                <option value="mu">جامعة أم القرى</option>
+                                <option value="kuwait">جامعة الكويت</option>
+                                <option value="bahrain">جامعة البحرين</option>
+                                <option value="oman">جامعة السلطان قابوس</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- التخصص مع خاصية البحث -->
+                    <div class="form-group">
+                        <label for="major">التخصص</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                            <select id="major" name="major" required class="searchable-select">
+                                <option value="">اختر تخصصك</option>
+                                <option value="cs">علوم الحاسب</option>
+                                <option value="is">نظم المعلومات</option>
+                                <option value="se">هندسة البرمجيات</option>
+                                <option value="ce">الهندسة الكهربائية</option>
+                                <option value="me">الهندسة الميكانيكية</option>
+                                <option value="ai">الذكاء الاصطناعي</option>
+                                <option value="ds">علم البيانات</option>
+                                <option value="cyber">الأمن السيبراني</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- سنة التخرج -->
+                    <div class="form-group">
+                        <label for="graduation-year">سنة التخرج المتوقعة</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar"></i>
+                            <select id="graduation-year" name="graduation-year" required class="searchable-select">
+                                <option value="">اختر سنة التخرج</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- كلمة المرور -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signup-password">كلمة المرور</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="signup-password" name="password" required placeholder="كلمة مرور قوية">
+                                <button type="button" class="password-toggle" id="signup-password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength" id="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-fill"></div>
+                                </div>
+                                <span class="strength-text">قوة كلمة المرور</span>
+                            </div>
+                        </div>
+
+                        <!-- تأكيد كلمة المرور -->
+                        <div class="form-group">
+                            <label for="confirm-password">تأكيد كلمة المرور</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirm-password" name="confirm-password" required placeholder="أعد كتابة كلمة المرور">
+                                <button type="button" class="password-toggle" id="confirm-password-toggle">
+                                    <i class="fas fa-eye" ></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- أوافق على الشروط -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms-agreement" required>
+                            <span class="checkmark"></span>
+                            أوافق على <a href="terms.html" target="_blank">شروط الاستخدام</a> و <a href="privacy.html" target="_blank">سياسة الخصوصية</a>
+                        </label>
+                    </div>
+
+                    <!-- الاشتراك في النشرة -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter">
+                            <span class="checkmark"></span>
+                            أريد تلقي النشرة الإخبارية والتحديثات
+                        </label>
+                    </div>
+
+                    <!-- زر إنشاء الحساب -->
+                    <button type="submit" class="auth-btn primary" id="signup-btn">
+                        <span>إنشاء الحساب</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <!-- أو -->
+                    <div class="divider">
+                        <span>أو</span>
+                    </div>
+
+                    <!-- تسجيل الدخول عبر الشبكات -->
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>التسجيل بـ Google</span>
+                        </button>
+                        <button type="button" class="social-btn microsoft">
+                            <i class="fab fa-microsoft"></i>
+                            <span>التسجيل بـ Microsoft</span>
+                        </button>
+                    </div>
+
+                    <!-- رابط تسجيل الدخول -->
+                    <div class="form-footer">
+                        <p>لديك حساب بالفعل؟ <a href="login.html" class="login-link">تسجيل الدخول</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- رابط العودة للرئيسية -->
+            <div class="back-to-home">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-right"></i>
+                    العودة للرئيسية
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/auth.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
